@@ -1,0 +1,21 @@
+{
+  "name": "Sticky YouTube",
+  "version": "1.0",
+  "description": "Sticky YouTube",
+  "manifest_version": 2,
+  "author": "Anton Reshetov <reshetov.art@gmail.com>",
+  "homepage_url": "https://github.com/antonreshetov/sticky-youtube",
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["main.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "permissions": [
+    "tabs"
+  ],
+  "icons": {
+    "128": "youtube.png"
+  }
+}
